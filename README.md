@@ -1,32 +1,33 @@
-# React + TypeScript + Vite
+# CampusCycle
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A campus marketplace where students buy, sell and give away hostel and academic gear.
 
-Currently, two official plugins are available:
+## Problem
+Every semester, seniors leave lab coats, calculators, buckets and mattresses behind while juniors buy everything new. There is no trusted place on campus to trade them.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Solution
+CampusCycle lets students list items in seconds, browse by category and hostel, and chat with the seller on WhatsApp.
 
-## React Compiler
+## Features
+- Student onboarding: college ID and profile (verification is a UI prototype for now)
+- Two categories: Academic and Hostel Essentials
+- Girls / Boys hostel filter (AGH and PGH are girls hostels, KBH is the boys hostel)
+- Sell Item with photo upload, price (0 = free) and WhatsApp number
+- Buy now with order animation, then a mood-based shopping-experience rating
+- Chat with seller on WhatsApp with a pre-filled message
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
+React, TypeScript, Vite, Tailwind CSS, Framer Motion, Lucide icons
 
-## Expanding the Oxlint configuration
+## Run locally
+npm install
+npm run dev
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Future plans
+- Sign in with college email for real verification
+- Shared database so listings are visible to everyone
+- Seller ratings from the shopping-experience screen
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Demo
+Video: [paste link]
+Team: Hera Pheri Hackers (Siya , Priyanshi, Anshika, Sonali)
